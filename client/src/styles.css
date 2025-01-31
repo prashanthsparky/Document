@@ -1,0 +1,68 @@
+/* Global Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container Styling */
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+/* Header Styling */
+h1 {
+  text-align: center;
+}
+
+/* Upload Form Styling */
+.upload-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.upload-form label {
+  margin-bottom: 10px;
+}
+
+.upload-form input[type="file"] {
+  margin-bottom: 20px;
+}
+
+.upload-form button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Result Styling */
+.result-container {
+  margin-top: 20px;
+}
+
+.result {
+  background: #e7f3fe;
+  border-left: 6px solid #2196F3;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.error-message {
+  color: red;
+}

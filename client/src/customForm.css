@@ -1,0 +1,143 @@
+/* Global Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f1f3f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Container Styling */
+  .container {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 30px;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  /* Header Styling */
+  h1 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #202124;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  /* Custom Form Styling */
+  .custom-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .custom-form label {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #5f6368;
+    margin-bottom: 5px;
+  }
+  
+  .custom-form input[type="text"],
+  .custom-form input[type="email"],
+  .custom-form input[type="file"],
+  .custom-form select,
+  .custom-form textarea {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    color: #202124;
+    background: #fff;
+    border: 1px solid #dadce0;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    box-shadow: none;
+    transition: border 0.3s ease;
+  }
+  
+  .custom-form input[type="text"]:focus,
+  .custom-form input[type="email"]:focus,
+  .custom-form input[type="file"]:focus,
+  .custom-form select:focus,
+  .custom-form textarea:focus {
+    border: 1px solid #4285f4;
+    outline: none;
+  }
+  
+  .custom-form textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+  
+  /* Check Button Styling */
+  .custom-form .check-button {
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .custom-form .check-button:hover {
+    background-color: #1967d2;
+  }
+  
+  /* Submit Button Styling */
+  .custom-form button {
+    background-color: #34a853;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  .custom-form button:hover {
+    background-color: #2c8c47;
+  }
+  
+  /* Navbar Styling */
+  .navbar {
+    background-color: #4285f4;
+    padding: 10px;
+    margin-bottom: 40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 8px 8px;
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar li {
+    margin: 0 20px;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  
+  .navbar a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Content Area Styling */
+  .content {
+    padding: 20px;
+  }
+  

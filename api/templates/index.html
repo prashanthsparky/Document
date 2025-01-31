@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Verification</title>
+</head>
+<body>
+    <h1>Document Verification</h1>
+    <form id="uploadForm" enctype="multipart/form-data">
+        <label for="file">Upload your document:</label>
+        <input type="file" id="file" name="file" accept="image/*" required>
+        <button type="submit">Upload</button>
+    </form>
+    <div id="result" style="margin-top:20px;"></div>
+
+    <script>
+        document.getElementById('uploadForm').onsubmit = async function(event) {
+            event.preventDefault();
+            const formData = new FormData(this);
+
+            try {
+                const response = await fetch('/predict', {
+                    method: 'POST',
+                    body: formData
+                });
+                const result = await response.json();
+
+                let resultDiv = document.getElementById('result');
+                if (response.ok) {
+                    resultDiv.innerHTML = `<p>Document Type: ${result.document_type}</p><p>Confidence: ${result.confidence.toFixed(2)}</p>`;
+                } else {
+                    resultDiv.innerHTML = `<p>Error: ${result.error}</p>`;
+                }
+            } catch (error) {
+                document.getElementById('result').innerHTML = `<p>Error: ${error.message}</p>`;
+            }
+        }
+    </script>
+</body>
+</html>
